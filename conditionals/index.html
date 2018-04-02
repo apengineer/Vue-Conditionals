@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>VueJS - Computed Properties</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+  <div id="v-coditionals">
+    <h1> Conditionals Example</h1>
+    <button v-on:click="happy = !happy">Toggle Image</button>
+    <!-- Similar to if else -->
+    <p v-if = "happy">
+      <img src="smiley.jpg"/>
+    </p>
+    <p v-else-if = "!happy">
+      <img src="sad.jpg"/>
+    </p>
+
+    <!-- Similar to enabled -->
+    <button v-on:click="hidden = !hidden">Show/Hide</button>
+
+     <p v-show="hidden">
+       Enable demo
+     </p>
+
+    <script src="app.js"></script>
+  </div>
+</body>
+
+</html>
